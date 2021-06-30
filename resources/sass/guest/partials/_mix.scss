@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.btn_primary {
+    color: black!important;
+    font-size: $font_text_m;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    background-color: $pallette_yellow;
+    border: solid $pallette_yellow_dark 1px;
+    -webkit-box-shadow: 3px 3px 0px 0px rgba(246, 180, 37, 1);
+    -moz-box-shadow:    3px 3px 0px 0px rgba(246, 180, 37, 1);
+    box-shadow:         3px 3px 0px 0px rgba(246, 180, 37, 1);
+    text-shadow: 1px 1px 0px rgb(0, 0, 0);
+}
+
+//* margins generator: mt_1 => margint-top : 10px;
+@for $i from 1 through 10 {
+    .mt_#{$i} {
+    margin-top: 10px * $i;
+    }
+}
+
+//fonts 
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: rgba($color: $pallette_yellow_dark, $alpha: 0.2);
+}
+
+h1{
+    text-align: center;
+}
+h1, h2 {
+    font-family: $veganStyle;
+    letter-spacing: 2px;
+    font-weight: lighter;
+}
+
+.container{
+    width:90%;
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fake_label {
+    font-size: $font_text_s;
+    color: $pallette_red;
+    text-shadow: 1px 1px 2px black;
+}
+.btn_center {
+    text-align: center;
+}
+span.devibool{
+    font-family: $veganStyle;
+    color: $pallette_red;
+}
+.display{
+    display: block;
+ }
+ .displayNone{
+    display: none;
+}
+section {    
+    scroll-margin-top: 100px;
+}
+
+// ? list socials
+i {
+    border-radius: 5px;
+    color: white;
+}
+
+.fa-facebook-f {
+    padding: 10px 12px 10px 14px;
+    background-color: #3c5998;
+}
+.fa-twitter {
+    padding: 10px;
+    background-color: #54acee;
+}
+.fa-instagram {
+    padding: 10px 11px;
+    background-color: #3f729b;
+}
+.fa-youtube {
+    padding: 10px 9px;
+    background-color: #cd201f;
+}
+.fa-tripadvisor {
+    padding: 10px 8px;
+    background-color: #31d99c;
+}
+
+/* //?  MEDIUM 768-480px  */
+@media screen  and (max-width:768px) {
+    .container{
+        width: 100%;
+    }
+    .fa-facebook-f {
+        padding: 6px 8px 6px 10px;
+    }
+    .fa-twitter {
+        padding: 6px;
+    }
+    .fa-instagram {
+        padding: 6px 7px;
+    }
+    .fa-youtube {
+        padding: 6px 5px;
+    }
+    .fa-tripadvisor {
+        padding: 6px 4px;
+    }
+}
+
+
+
+
+//* MEDIA QUERY RESPONSIVE
+
+/* //?  LARGE 1200-768px */
+@media screen and (max-width:1200px) {
+
+}
+
+/* //?  MEDIUM 768-480px  */
+@media screen  and (max-width:768px) {
+
+}
+
+/* //?  SMALL 480-320 */
+@media screen and (max-width:480px) {
+
+}
+
+
+// scroll smooth
+html {
+    scroll-behavior: smooth;
+  }
